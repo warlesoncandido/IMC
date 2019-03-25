@@ -20,7 +20,7 @@ document.getElementById('btn').addEventListener("click",function(){
         document.getElementById('textResul').innerHTML="Sobrepeso";
     }
     if(total >30){
-        document.getElementById('textResul').innerHTML="Gordão";
+        document.getElementById('textResul').innerHTML="Obesidade";
 
     }
 });
