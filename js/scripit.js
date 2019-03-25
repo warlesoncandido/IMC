@@ -11,7 +11,20 @@ document.getElementById('btn').addEventListener("click",function(){
 
     document.getElementById("resultado").value=Math.round(total);
 
-})
+    if(total <= 18){
+
+        document.getElementById('textResul').innerHTML="<h1>Magro</h1><br>";
+    }if (total > 18){
+        document.getElementById('textResul').innerHTML="Normal";
+    }if(total > 26){
+        document.getElementById('textResul').innerHTML="Sobrepeso";
+    }
+    if(total >30){
+        document.getElementById('textResul').innerHTML="Gordão";
+
+    }
+});
+
 
 
 
