@@ -23,7 +23,12 @@ document.getElementById('btn').addEventListener("click",function(){
         document.getElementById('textResul').innerHTML="Obesidade";
 
     }
-});
+
+    //Outro laço para valor 0
+  
+   });
+  
+
 
 
 
