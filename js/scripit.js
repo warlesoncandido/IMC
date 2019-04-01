@@ -1,11 +1,27 @@
+var button =document.getElementById('btn');
 
 
-document.getElementById('btn').addEventListener("click",function(){
 
+button.addEventListener("click",function(){
     var valor1 = document.getElementById('peso').value;
     var valor2 = document.getElementById('altura').value;
+     valor2=valor2.replace(",",".");
+    
+    if (valor1=="" & valor2=="") {
+
+        alert("Digite um valor válido")
+        button.disabled="true";
+
+        
+    } else {
+        button.disabled="false";
+        
+    }
 
 
+    
+
+    
 
     var total = valor1 / (Math.pow(valor2,2));
 
